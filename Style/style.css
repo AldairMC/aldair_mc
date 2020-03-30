@@ -1,5 +1,19 @@
 body {
-    margin: 20px 10% 0 10% ;
+    margin: 0 0 0 0;
+}
+
+.Container__one {
+    background-color: #FAF7F4;
+    padding-top: 20px;
+}
+
+.Container__part__one {
+    margin: 0px 10% 0 10%;
+}
+
+.Separator {
+    height: 100px;
+    background-color: #FAF7F4;
 }
 
 a {
@@ -124,7 +138,7 @@ a {
     }
 
     .Container__contact__education {
-        height: 280px;
+        height: 290px;
         grid-template-columns: 100%;
         row-gap: 50px;
     }
