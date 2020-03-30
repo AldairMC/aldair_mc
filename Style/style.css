@@ -1,5 +1,5 @@
 body {
-    margin: 0 10% 0 10% ;
+    margin: 20px 10% 0 10% ;
 }
 
 a {
@@ -50,7 +50,18 @@ a {
         grid-template-rows: 40px 40px 40px;
 }
 
+.Container__contact__education 
+    .Container__education {
+        display: grid;
+        grid-template-rows: 40px 40px 40px;
+}
+
 .Content__contact {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.Content__education {
     display: grid;
     grid-template-columns: 20% 80%;
 }
@@ -61,11 +72,30 @@ a {
     justify-self: center;
 }
 
+.__Icon__education {
+    align-self: center;
+    justify-self: start;
+    font-size: 30px;
+}
+
 .__Content {
     align-self: center;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     justify-self: flex-start;
+}
+
+.__Content__name__education {
+    align-self: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-self: flex-start;
+}
+
+.__Content__education {
+    align-self: center;
+    font-size: 15px;
+    font-family: sans-serif;
 }
 
 .Footer {
@@ -94,7 +124,9 @@ a {
     }
 
     .Container__contact__education {
+        height: 280px;
         grid-template-columns: 100%;
+        row-gap: 50px;
     }
 
     .__Icon {
@@ -110,5 +142,18 @@ a {
     .Container__contact__education 
         .Container__contact {
             border-right: 0px;
+    }
+
+    .__Icon__education {
+        justify-self: center;
+    }
+
+    .__Content__name__education {
+        justify-self: flex-start;
+        font-size: 20px;
+    }
+
+    .__Content__education {
+        font-size: 13px;
     }
 }
