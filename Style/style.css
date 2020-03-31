@@ -101,7 +101,13 @@ a {
 .Container__language__hobbies {
     display: grid;
     height: 110px;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: repeat(2, 50%);
+}
+
+.Container__skills {
+    height: 440px;
+    display: grid;
+    grid-template-rows: 20% 80%;
 }
 
 .Container__icon__languages {
@@ -112,6 +118,14 @@ a {
 .Container__icon___hobbies {
     display: grid;
     grid-template-columns: repeat(5, 20%);
+}
+
+.Container__icon__skills span i{
+    letter-spacing: 12.5px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
 }
 
 .Content__contact {
@@ -177,7 +191,7 @@ a {
     justify-self: center;
 }
 
-.__Content__icon__hobbies {
+.__Content__icon__hobbies__skills {
     align-self: center;
     justify-self: center;
     font-size: 30px;
