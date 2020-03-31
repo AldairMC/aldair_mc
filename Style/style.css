@@ -84,8 +84,12 @@ a {
 .Container__about__experience 
     .Container__about {
         display: grid;
-        grid-template-rows: repeat(4, 220px);
+        grid-template-rows: 220px repeat(2, 110px) 440px;
         row-gap: 40px;
+}
+
+.__padding__container__about {
+    padding: 0 60px 0 60px;
 }
 
 .Container__goal {
@@ -94,16 +98,20 @@ a {
     grid-template-rows: 25% 75%;
 }
 
-.Container__language {
+.Container__language__hobbies {
     display: grid;
-    height: 220px;
+    height: 110px;
     grid-template-rows: 50% 50%;
-
 }
 
 .Container__icon__languages {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.Container__icon___hobbies {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
 }
 
 .Content__contact {
@@ -157,7 +165,7 @@ a {
 }
 
 .__Content__about__perfil {
-    padding: 0 60px 0 60px;
+    
     align-self: center;
     justify-self: flex-start;
     color: white;
@@ -169,10 +177,17 @@ a {
     justify-self: center;
 }
 
+.__Content__icon__hobbies {
+    align-self: center;
+    justify-self: center;
+    font-size: 30px;
+    color: white;
+}
+
 .__Content__flag__languages img {
     border-radius: 50%;
-    width: 80px;
-    height: 70px;
+    width: 40px;
+    height: 35px;
     opacity: 0.5;
 }
 
@@ -242,8 +257,11 @@ a {
     }
 
     .__Content__about__perfil {
-        padding: 0px 20px 0px 20px;
         font-size: 15px;
+    }
+
+    .__padding__container__about {
+        padding: 0px 20px 0px 20px;
     }
 
     .__Content__flag__languages img {
