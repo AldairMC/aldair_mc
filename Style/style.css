@@ -392,3 +392,33 @@ a {
         align-self: flex-end;
     }
 }
+
+@media (min-width: 769px) and (max-width: 1080px) {
+    .Container__contact__education {
+        height: 370px;
+        grid-template-columns: 100%;
+        row-gap: 50px;
+    }
+
+    .Container__contact__education 
+        .Container__contact {
+            border-right: 0px;
+    }
+
+    .Container__contact__education 
+        .Container__education {
+            border-left: 3px solid #000;
+    }
+
+    .Content__contact {
+        grid-template-columns: 40% 60%;
+    }
+
+    .__Content__title__work_one {
+        font-size: 15px;
+    }
+
+    .__Content__tech {
+        font-size: 15px;
+    }
+}
